@@ -70,7 +70,7 @@ export default class MediaWiki extends L.GeoJSON {
     latlng: L.LatLng
   ): L.Marker | undefined {
     const zoom = this._map.getZoom();
-    const width = zoom > 20 ? 320 : zoom > 18 ? 240 : zoom > 16 ? 120 : 60;
+    const width = zoom > 20 ? 820 : zoom > 18 ? 440 : zoom > 16 ? 120 : 60;
     const iconUrl = feature.properties.thumbnail?.(320);
     if (!iconUrl) return;
     const icon = L.icon({
